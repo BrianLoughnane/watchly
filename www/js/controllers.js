@@ -84,7 +84,7 @@ angular.module('watchly.controllers', ['watchly.services'])
       Incidents.getAllIncidents().then(function (result) {
         result[0].forEach(function (incident) {
           $scope.incidents[incident.id] = incident;
-        })
+        });
         $scope.renderAllIncidents();
       });
     };
